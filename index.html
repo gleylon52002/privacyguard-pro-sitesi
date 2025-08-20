@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrivacyGuard Pro - Nihai Gizlilik ve Güvenlik Eklentisi</title>
+    <meta name="description" content="PrivacyGuard Pro ile reklamları, takipçileri engelleyin ve gizli Geçmiş Kasası ile internet geçmişinizi koruyun. Chrome için hepsi bir arada güvenlik çözümü.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* --- Temel Stiller --- */
+        :root {
+            --bg: #0f1216;
+            --card: #161b22;
+            --muted: #8ea3b0;
+            --fg: #e6eef3;
+            --accent: #20c997;
+            --shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--fg);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- Header --- */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--fg);
+        }
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+        }
+        .logo-text {
+            font-weight: 800;
+            font-size: 20px;
+        }
+        .logo-text span {
+            color: var(--accent);
+        }
+
+        /* --- Hero (Ana Giriş) Bölümü --- */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .hero .highlight {
+            color: var(--accent);
+        }
+        .hero p {
+            font-size: 18px;
+            color: var(--muted);
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: #001510;
+            padding: 15px 30px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(32, 201, 151, 0.2);
+        }
+
+        /* --- Özellikler Bölümü --- */
+        .features {
+            padding: 60px 0;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 40px;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .feature-card {
+            background-color: var(--card);
+            padding: 30px;
+            border-radius: 16px;
+            border: 1px solid #1f2630;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        .feature-card svg {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+        .feature-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .feature-card p {
+            color: var(--muted);
+            font-size: 15px;
+        }
+
+        /* --- Gizlilik Vurgusu --- */
+        .privacy-section {
+            background-color: var(--card);
+            padding: 60px 30px;
+            margin: 60px 0;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        /* --- Footer --- */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 40px;
+            border-top: 1px solid #1f2630;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="header container">
+        <a href="#" class="logo">
+            <img src="https://i.imgur.com/eC5SA0N.png" alt="PrivacyGuard Pro Logo">
+            <span class="logo-text">PrivacyGuard<span>Pro</span></span>
+        </a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Dijital Dünyada Tam <span class="highlight">Kontrol</span> ve <span class="highlight">Huzur</span></h1>
+                <p>PrivacyGuard Pro, sizi reklamlardan, takipçilerden ve tehditlerden koruyan hepsi bir arada güvenlik kalkanıdır. İnterneti olması gerektiği gibi deneyimleyin: Hızlı, temiz ve güvenli.</p>
+                <a href="BURAYA_CHROME_WEB_MAGAZA_LINKINIZI_YAPISTIRIN" class="cta-button">Hemen Ücretsiz Yükleyin</a>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">Neden PrivacyGuard Pro?</h2>
+                <div class="features-grid">
+                    
+                    <div class="feature-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 100 12h-3a7.5 7.5 0 00-7.5-7.5h1.5v-1.5a7.5 7.5 0 007.5-7.5h3z"/><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+                        <h3>Reklam & Takipçi Engelleme</h3>
+                        <p>Sayfaları yavaşlatan ve sizi izleyen tüm reklam ve takipçileri engelleyerek internetinizi hızlandırır.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/></svg>
+                        <h3>Benzersiz Geçmiş Kasası</h3>
+                        <p>Gezinti geçmişinizi tarayıcıdan gizler ve sadece sizin erişebileceğiniz şifreli bir kasada saklar.</p>
+                    </div>
+
+                    <div class="feature-card">
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-2.666-5.43a4.5 4.5 0 00-9.522 0 3 3 0 00-2.666 5.43A4.5 4.5 0 002.25 15z"/></svg>
+                        <h3>Sekme Dondurucu</h3>
+                        <p>Kullanılmayan sekmeleri otomatik dondurarak bilgisayarınızın belleğini (RAM) rahatlatır ve hızı artırır.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+                        <h3>Tek Tıkla Temizlik</h3>
+                        <p>Çerezler, önbellek ve diğer site verilerini tek bir tıkla temizleyerek dijital ayak izinizi sıfırlayın.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"/></svg>
+                        <h3>Akıllı Bağlantı Koruması</h3>
+                        <p>Güvensiz siteleri otomatik olarak HTTPS'e yükseltir ve linklerdeki takip kodlarını temizler.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z"/></svg>
+                        <h3>Güvenli Şifre Oluşturucu</h3>
+                        <p>Tüm hesaplarınız için tek tıkla kırılamaz, karmaşık ve güvenli şifreler oluşturun.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="privacy-section">
+            <div class="container">
+                <h2 class="section-title">Gizliliğiniz, Bizim Önceliğimizdir.</h2>
+                <p>PrivacyGuard Pro, kişisel verilerinizi asla toplamaz, saklamaz veya satmaz. Tüm işlemler yerel olarak bilgisayarınızda gerçekleşir. <br>Gizlilik politikamız basittir: **Verileriniz sadece size aittir.**</p>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 PrivacyGuard Pro. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
