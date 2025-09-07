@@ -180,6 +180,21 @@
         .footer a:hover {
             text-decoration: underline;
         }
+
+        /* --- YENİ: ANİMASYON STİLLERİ --- */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .hero .reveal {
+            transition-delay: var(--delay);
+        }
+
     </style>
 </head>
 <body>
@@ -200,31 +215,31 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Dijital Dünyada Tam <span class="highlight">Kontrol</span> ve <span class="highlight">Huzur</span></h1>
-                <p>PrivacyGuard Pro, sizi reklamlardan, takipçilerden ve tehditlerden koruyan hepsi bir arada güvenlik kalkanıdır. İnterneti olması gerektiği gibi deneyimleyin: Hızlı, temiz ve güvenli.</p>
-                <a href="#" id="chrome-store-link" class="cta-button">Hemen Ücretsiz Yükleyin</a>
+                <h1 class="reveal" style="--delay: 0.1s;">Dijital Dünyada Tam <span class="highlight">Kontrol</span> ve <span class="highlight">Huzur</span></h1>
+                <p class="reveal" style="--delay: 0.2s;">PrivacyGuard Pro, sizi reklamlardan, takipçilerden ve tehditlerden koruyan hepsi bir arada güvenlik kalkanıdır. İnterneti olması gerektiği gibi deneyimleyin: Hızlı, temiz ve güvenli.</p>
+                <a href="https://chromewebstore.google.com/detail/privacyguard-pro/ilhnonhdikmmdbhfneenhlidfbmkojac?authuser=0&hl=tr" class="cta-button reveal" style="--delay: 0.3s;" target="_blank" rel="noopener noreferrer">Hemen Ücretsiz Yükleyin</a>
             </div>
         </section>
 
         <section id="features" class="features section">
             <div class="container">
-                <h2 class="section-title">Neden PrivacyGuard <span>Pro</span>?</h2>
+                <h2 class="section-title reveal">Neden PrivacyGuard <span>Pro</span>?</h2>
                 <div class="features-grid">
                     
-                    <div class="feature-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 12.75c1.148 0 2.278.08 3.383.237 1.037.148 1.897 1.013 1.897 2.073V19.5a2.25 2.25 0 01-2.25 2.25H9.015a2.25 2.25 0 01-2.25-2.25v-4.44a2.062 2.062 0 011.897-2.073c1.104-.157 2.235-.237 3.383-.237zM12 12.75c-2.43 0-4.68.66-6.63 1.812a1.5 1.5 0 01-1.87-2.118A12.02 12.02 0 0112 5.25c4.407 0 8.362 2.13 10.5 5.25a1.5 1.5 0 01-1.87 2.118A13.465 13.465 0 0012 12.75z"></path></svg>
+                    <div class="feature-card reveal">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12.75c1.148 0 2.278.08 3.383.237 1.037.148 1.897 1.013 1.897 2.073V19.5a2.25 2.25 0 01-2.25 2.25H9.015a2.25 2.25 0 01-2.25-2.25v-4.44a2.062 2.062 0 011.897-2.073c1.104-.157 2.235-.237 3.383-.237zM12 12.75c-2.43 0-4.68.66-6.63 1.812a1.5 1.5 0 01-1.87-2.118A12.02 12.02 0 0112 5.25c4.407 0 8.362 2.13 10.5 5.25a1.5 1.5 0 01-1.87 2.118A13.465 13.465 0 0012 12.75z"></path></svg>
                         <h3>Akıllı Kalkan</h3>
                         <p>Yapay zeka desteğiyle, girdiğiniz sitenin türüne göre koruma seviyesini otomatik olarak ayarlayarak maksimum güvenlik sağlar.</p>
                     </div>
 
-                    <div class="feature-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/></svg>
+                    <div class="feature-card reveal">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/></svg>
                         <h3>Benzersiz Geçmiş Kasası</h3>
                         <p>Gezinti geçmişinizi tarayıcıdan gizler ve sadece sizin erişebileceğiniz şifreli bir kasada saklar.</p>
                     </div>
 
-                    <div class="feature-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-2.666-5.43a4.5 4.5 0 00-9.522 0 3 3 0 00-2.666 5.43A4.5 4.5 0 002.25 15z"></path></svg>
+                    <div class="feature-card reveal">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-2.666-5.43a4.5 4.5 0 00-9.522 0 3 3 0 00-2.666 5.43A4.5 4.5 0 002.25 15z"></path></svg>
                         <h3>Sekme Dondurucu</h3>
                         <p>Kullanılmayan sekmeleri otomatik dondurarak bilgisayarınızın belleğini (RAM) rahatlatır ve hızı artırır.</p>
                     </div>
@@ -232,7 +247,7 @@
             </div>
         </section>
 
-        <section class="privacy-section">
+        <section class="privacy-section reveal">
             <div class="container">
                 <h2 class="section-title">Gizliliğiniz, Bizim <span>Önceliğimizdir</span>.</h2>
                 <p>PrivacyGuard Pro, kişisel verilerinizi asla toplamaz, saklamaz veya satmaz. Tüm işlemler yerel olarak bilgisayarınızda gerçekleşir. Gizlilik politikamız basittir: **Verileriniz sadece size aittir.**</p>
@@ -247,5 +262,25 @@
         </div>
     </footer>
 
+    <!-- YENİ: ANİMASYON SCRIPT'İ -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            document.querySelectorAll('.reveal').forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+
 </body>
 </html>
+
